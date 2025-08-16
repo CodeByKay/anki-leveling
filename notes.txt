@@ -1,3 +1,5 @@
 py -m pip install --upgrade pip
 py -m pip install mypy aqt[qt6]
 py -m mypy __init__.py
+
+https://addon-docs.ankiweb.net/intro.html

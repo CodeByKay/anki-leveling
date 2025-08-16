@@ -1,0 +1,1437 @@
+{
+  "Sword": {
+    "HP": {
+      "class": "Warrior",
+      "abilities": {
+        "basicOffense": {
+          "name": "Cleave",
+          "description": "A focused sword swing that strikes an enemy directly.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Battle Cry",
+          "description": "Boosts strength, enhancing the next precise attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Parry",
+          "description": "Deflects an incoming attack with careful timing.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Second Wind",
+          "description": "Restores vitality through concentrated effort.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Strength": {
+      "class": "Knight",
+      "abilities": {
+        "basicOffense": {
+          "name": "Power Slash",
+          "description": "A heavy strike aimed at an enemy's defenses.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Holy Smite",
+          "description": "A radiant strike imbued with holy energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Shield Block",
+          "description": "Absorbs incoming damage with a steady guard.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Iron Will",
+          "description": "Channels resolve to resist an incoming strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Speed": {
+      "class": "Duelist",
+      "abilities": {
+        "basicOffense": {
+          "name": "Flurry",
+          "description": "A rapid series of precise strikes.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Shadow Step",
+          "description": "Teleports briefly to strike an enemy from behind.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Riposte",
+          "description": "Counters an incoming attack with a swift strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Blur",
+          "description": "Momentarily enhances evasion against incoming attacks.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Defense": {
+      "class": "Paladin",
+      "abilities": {
+        "basicOffense": {
+          "name": "Smite Evil",
+          "description": "A focused strike dealing bonus damage to corrupt foes.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Divine Judgement",
+          "description": "Calls down holy light to strike an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Shield Bash",
+          "description": "Blocks and disrupts an opponent's attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Sacred Ward",
+          "description": "Summons a protective barrier around a target.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "MP": {
+      "class": "Spellblade",
+      "abilities": {
+        "basicOffense": {
+          "name": "Arcane Slash",
+          "description": "Sword strike infused with elemental energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Elemental Burst",
+          "description": "Releases stored magic in a focused strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Deflect",
+          "description": "Parries an incoming attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Mana Ward",
+          "description": "Creates a magical shield to block an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    }
+  },
+  "Hammer": {
+    "HP": {
+      "class": "Barbarian",
+      "abilities": {
+        "basicOffense": {
+          "name": "Crush",
+          "description": "Powerful hammer strike that breaks through defenses.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "War Shout",
+          "description": "Intimidates and empowers the next strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Block",
+          "description": "Raises hammer to absorb incoming attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Endurance",
+          "description": "Taps inner strength to reduce incoming damage.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Strength": {
+      "class": "Berserker",
+      "abilities": {
+        "basicOffense": {
+          "name": "Smash",
+          "description": "Heavy hammer blow to an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Fury Strike",
+          "description": "Infuses strike with intense rage.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Brace",
+          "description": "Prepares to absorb a strong hit.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Rune Fortitude",
+          "description": "Magically strengthens defenses for a moment.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Speed": {
+      "class": "Raider",
+      "abilities": {
+        "basicOffense": {
+          "name": "Swing",
+          "description": "Quick hammer strike aimed precisely.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Shockwave",
+          "description": "Hammer imbued with force to stagger a target.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Counter",
+          "description": "Uses hammer to deflect incoming blow.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Runic Shield",
+          "description": "Magical energy forms a temporary defense.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Defense": {
+      "class": "Warden",
+      "abilities": {
+        "basicOffense": {
+          "name": "Guard Strike",
+          "description": "Hammer strike while maintaining defense.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Stone Fist",
+          "description": "Empowers hammer with defensive magic to strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Fortify",
+          "description": "Raises defenses in preparation for an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Runic Guard",
+          "description": "Magic reinforces armor to block a blow.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "MP": {
+      "class": "Runeknight",
+      "abilities": {
+        "basicOffense": {
+          "name": "Rune Strike",
+          "description": "Empowered hammer strike with mystical force.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Arcane Hammer",
+          "description": "Unleashes stored magical energy through hammer.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Deflect",
+          "description": "Parries an incoming strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Runic Shield",
+          "description": "Magical barrier reinforces defense temporarily.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    }
+  },
+  "Bow": {
+    "HP": {
+      "class": "Hunter",
+      "abilities": {
+        "basicOffense": {
+          "name": "Precise Shot",
+          "description": "A carefully aimed arrow pierces an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Piercing Arrow",
+          "description": "Magic-infused arrow targets a vulnerable point.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Dodge Roll",
+          "description": "Evades an incoming attack with agility.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Wind Veil",
+          "description": "Magical currents reduce impact of an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Strength": {
+      "class": "Sniper",
+      "abilities": {
+        "basicOffense": {
+          "name": "Deadeye",
+          "description": "A high-powered shot hits a precise target.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Focused Shot",
+          "description": "Magical arrow pierces defenses.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Quick Step",
+          "description": "Rapid movement to avoid an incoming attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Arcane Evasion",
+          "description": "Magical energy shields against an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Speed": {
+      "class": "Ranger",
+      "abilities": {
+        "basicOffense": {
+          "name": "Rapid Shot",
+          "description": "Quick arrow aimed at an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Elemental Arrow",
+          "description": "Imbues an arrow with elemental power.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Evasive Maneuver",
+          "description": "Dodges to avoid harm.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Nature's Ward",
+          "description": "Harnesses natural energy to reduce an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Defense": {
+      "class": "Sentinel",
+      "abilities": {
+        "basicOffense": {
+          "name": "Guarded Shot",
+          "description": "A careful arrow release to strike an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Holy Arrow",
+          "description": "Blessed arrow pierces defenses.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Steady Stance",
+          "description": "Maintains posture to reduce damage.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Divine Shield",
+          "description": "Protects against incoming harm with holy energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "MP": {
+      "class": "Arcane Archer",
+      "abilities": {
+        "basicOffense": {
+          "name": "Magic Shot",
+          "description": "Releases an enchanted arrow at a foe.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Mystic Barrage",
+          "description": "Channels magic through an arrow to strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Arcane Step",
+          "description": "Shifts position to avoid an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Energy Ward",
+          "description": "Forms a magical barrier to block an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    }
+  },
+  "Shield": {
+    "HP": {
+      "class": "Guardian",
+      "abilities": {
+        "basicOffense": {
+          "name": "Shield Bash",
+          "description": "Strikes an enemy with a reinforced shield.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Blessed Strike",
+          "description": "Imbues shield with energy to hit a target.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Guard",
+          "description": "Raises shield to block incoming attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Sanctuary",
+          "description": "Creates protective energy to reduce harm.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Strength": {
+      "class": "Crusader",
+      "abilities": {
+        "basicOffense": {
+          "name": "Mighty Bash",
+          "description": "Powerful shield strike against an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Divine Crush",
+          "description": "Channel holy power through the shield.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Hold Position",
+          "description": "Stands firm to reduce incoming harm.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Sacred Guard",
+          "description": "Protective energy surrounds defender.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Speed": {
+      "class": "Templar",
+      "abilities": {
+        "basicOffense": {
+          "name": "Quick Bash",
+          "description": "Swift shield strike with precision.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Smite Guard",
+          "description": "Magical energy enhances a strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Deflect Stance",
+          "description": "Positions shield to reduce damage.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Blessed Barrier",
+          "description": "Forms protective magic around defender.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Defense": {
+      "class": "Protector",
+      "abilities": {
+        "basicOffense": {
+          "name": "Guard Strike",
+          "description": "Shield strike delivered while maintaining defense.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Barrier Smash",
+          "description": "Empowered strike reinforced by magic.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Fortress Stance",
+          "description": "Holds position to absorb attacks.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Ward of Stone",
+          "description": "Magical stone barrier reduces impact.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "MP": {
+      "class": "Spellshield",
+      "abilities": {
+        "basicOffense": {
+          "name": "Arcane Bash",
+          "description": "Shield strike enhanced with magical force.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Mystic Guard",
+          "description": "Magical shield channels energy into attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Deflect",
+          "description": "Parries an incoming strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Mana Barrier",
+          "description": "Magical shield absorbs attack energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    }
+  },
+  "Wand": {
+    "HP": {
+      "class": "Battlemage",
+      "abilities": {
+        "basicOffense": {
+          "name": "Arcane Bolt",
+          "description": "Launches a bolt of magic at an enemy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Elemental Wave",
+          "description": "Channels elemental energy into a strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Magic Shield",
+          "description": "Blocks an attack using arcane energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Healing Ward",
+          "description": "Restores vitality using magical energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Strength": {
+      "class": "Warlock",
+      "abilities": {
+        "basicOffense": {
+          "name": "Dark Bolt",
+          "description": "Fires a bolt of dark magic.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Curse",
+          "description": "Inflicts magical damage over time.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Shadow Barrier",
+          "description": "Blocks attack with dark magic.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Life Drain",
+          "description": "Steals vitality from an enemy to restore self.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Speed": {
+      "class": "Sorcerer",
+      "abilities": {
+        "basicOffense": {
+          "name": "Magic Missile",
+          "description": "Shoots a fast-moving magical projectile.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Firebolt",
+          "description": "Unleashes a concentrated fire spell.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Evasive Magic",
+          "description": "Uses magic to avoid an incoming strike.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Mystic Shield",
+          "description": "Creates a shield of magical force.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "Defense": {
+      "class": "Enchanter",
+      "abilities": {
+        "basicOffense": {
+          "name": "Enchanted Strike",
+          "description": "A magically enhanced attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Binding Spell",
+          "description": "Restrains or damages an enemy with magic.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Magical Guard",
+          "description": "Uses enchantments to block an attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Protective Charm",
+          "description": "Shields from harm with magical energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    },
+    "MP": {
+      "class": "Archmage",
+      "abilities": {
+        "basicOffense": {
+          "name": "Arcane Bolt",
+          "description": "Launches a concentrated magical attack.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicOffense": {
+          "name": "Meteor",
+          "description": "Calls down a destructive magical force.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "basicDefense": {
+          "name": "Magic Barrier",
+          "description": "Blocks an attack with arcane energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        },
+        "magicDefense": {
+          "name": "Mana Shield",
+          "description": "Converts mana into protective energy.",
+          "baseDamage": 0,
+          "heal": 0,
+          "speedBuff": 0,
+          "speedDebuff": 0,
+          "defenseBuff": 0,
+          "defenseDebuff": 0,
+          "strengthBuff": 0,
+          "strengthDebuff": 0,
+          "manaCost": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+On first load, enter your name and choose your character.
+
+Default stats: 10 HP, 1 Strength, 1 Speed, 1 Defense, 10 MP
+Selective additional stats. HP, Strength, Speed, Defense, MP
+Choose selective stats (10 points; 1 per point for Strength, Speed, Defense, 10 per point for HP, MP)
+
+Choose weapon. Sword, Hammer, Bow, Shield, Wand
+
+Other game stats. Name, Experience Point, Level, Rank 
+
+Sword
+HP + Sword = Warrior
+Strength + Sword = Knight
+Speed + Sword = Duelist
+Defense + Sword = Paladin
+MP + Sword = Spellblade
+
+Hammer
+HP + Hammer = Barbarian
+Strength + Hammer = Berserker
+Speed + Hammer = Raider
+Defense + Hammer = Warden
+MP + Hammer = Runeknight
+
+Bow
+HP + Bow = Hunter
+Strength + Bow = Sniper
+Speed + Bow = Ranger
+Defense + Bow = Sentinel
+MP + Bow = Arcane Archer
+
+Shield
+HP + Shield = Guardian
+Strength + Shield = Crusader
+Speed + Shield = Templar
+Defense + Shield = Protector
+MP + Shield = Spellshield
+
+Wand
+HP + Wand = Battlemage
+Strength + Wand = Warlock
+Speed + Wand = Sorcerer
+Defense + Wand = Enchanter
+MP + Wand = Archmage
+
+Enter first dungeon, each n rank dungeon has n number of monsters to defeat.
+Each monster has a level range of based on the rank of the dungeon and gives exp of the same value as their level.
+Each monster has a base stat totaling 10 points multiplied by their level. 
+
+Oh level, allot 10 points to stats. If max stat changes, then change class.
+
+Gameplay
+Level ranks up based on exp, exp scales rounding up on the logarithmic formula = 1/99root(999990)^(x)+10
+Level 1: 12
+Level 5: 13
+Level 10: 15
+Level 15: 19
+Level 20: 27
+Level 30: 76
+Level 40: 276
+Level 50: 1086
+Level 60: 4339
+Level 70: 17486
+Level 80: 70558
+Level 90: 284811
+Level 95: 572242
+Level 99: 1000000
+
+Ranking starts at F rank on a scale of (F, E, D, C, B, A, S). Rank scales on level.
+Level 1-4: F Rank
+Level 5-9: E Rank
+Level 10-19: D Rank
+Level 20-39: C Rank
+Level 40-59: B Rank
+Level 60-89: A Rank
+Level 90+: S Rank
