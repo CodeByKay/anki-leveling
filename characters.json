@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Player 1",
+        "dateJoined": "8-17-2025",
+        "dateLastAdventure": "8-18-2025",
+        "weapon": "Sword",
+        "stats": {
+            "HP": 120,
+            "Strength": 1,
+            "Speed": 1,
+            "Defense": 1,
+            "MP": 1
+        },
+        "level": 1,
+        "rank": "F",
+        "currentXP": 123,
+        "dungeons": {
+            "F": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "E": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "D": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "C": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "B": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "A": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "S": {
+                "pass": 1,
+                "fail": 1
+            }
+        }
+    },
+    {
+        "name": "Player 2",
+        "dateJoined": "8-18-2025",
+        "dateLastAdventure": "8-18-2025",
+        "weapon": "Hammer",
+        "stats": {
+            "HP": 120,
+            "Strength": 1,
+            "Speed": 1,
+            "Defense": 1,
+            "MP": 1
+        },
+        "level": 1,
+        "rank": "F",
+        "currentXP": 123,
+        "dungeons": {
+            "F": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "E": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "D": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "C": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "B": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "A": {
+                "pass": 1,
+                "fail": 1 
+            },
+            "S": {
+                "pass": 1,
+                "fail": 1
+            }
+        }
+    }
+]

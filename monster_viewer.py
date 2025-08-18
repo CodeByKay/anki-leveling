@@ -133,7 +133,7 @@ class MonsterViewer(QDialog):
         for i, monster in enumerate(monsters):
             monster_tab = self.create_monster_tab(monster, category_color)
             # Use tier1 name for tab title
-            tab_name = monster['name']['tier1'].split()[0]  # First word only for space
+            tab_name = monster['name']['base']
             monster_tab_widget.addTab(monster_tab, f"{i+1}. {tab_name}")
         
         category_layout.addWidget(monster_tab_widget)

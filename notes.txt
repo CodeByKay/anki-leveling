@@ -3,3 +3,15 @@ py -m pip install mypy aqt[qt6]
 py -m mypy __init__.py
 
 https://addon-docs.ankiweb.net/intro.html
+
+TODO
+- create player
+- load player from file
+- monster generation
+- dungeon generation
+- player combat
+- monster combat
+- leveling, stat update, class update
+- save player to file
+- animations per monster, per weapon, per attack, per defense
+- social media
