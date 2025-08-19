@@ -3,40 +3,40 @@
     "HP": {
       "class": "Warrior",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Cleave",
-          "description": "A focused sword swing that strikes an enemy directly.",
-          "baseDamage": 0,
+          "description": "Strikes downward on the enemy, reducing their strength and defense.",
+          "baseDamage": 8,
           "heal": 0,
           "speedBuff": 0,
           "speedDebuff": 0,
           "defenseBuff": 0,
-          "defenseDebuff": 0,
+          "defenseDebuff": 1,
           "strengthBuff": 0,
-          "strengthDebuff": 0,
+          "strengthDebuff": 1,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Battle Cry",
-          "description": "Boosts strength, enhancing the next precise attack.",
-          "baseDamage": 0,
+          "description": "Attacks, then roar an intimidating shout that boosts strength, defense, and speed",
+          "baseDamage": 5,
           "heal": 0,
-          "speedBuff": 0,
+          "speedBuff": 1,
           "speedDebuff": 0,
-          "defenseBuff": 0,
+          "defenseBuff": 2,
           "defenseDebuff": 0,
-          "strengthBuff": 0,
+          "strengthBuff": 2,
           "strengthDebuff": 0,
-          "manaCost": 0
+          "manaCost": 1
         },
         "basicDefense": {
-          "name": "Parry",
-          "description": "Deflects an incoming attack with careful timing.",
+          "name": "Defensive Stance",
+          "description": "Heals, then raises defense to reduce incoming attacks.",
           "baseDamage": 0,
-          "heal": 0,
+          "heal": 5,
           "speedBuff": 0,
           "speedDebuff": 0,
-          "defenseBuff": 0,
+          "defenseBuff": 5,
           "defenseDebuff": 0,
           "strengthBuff": 0,
           "strengthDebuff": 0,
@@ -46,24 +46,24 @@
           "name": "Second Wind",
           "description": "Restores vitality through concentrated effort.",
           "baseDamage": 0,
-          "heal": 0,
+          "heal": 10,
           "speedBuff": 0,
           "speedDebuff": 0,
           "defenseBuff": 0,
           "defenseDebuff": 0,
           "strengthBuff": 0,
           "strengthDebuff": 0,
-          "manaCost": 0
+          "manaCost": 2
         }
       }
     },
     "Strength": {
       "class": "Knight",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Power Slash",
-          "description": "A heavy strike aimed at an enemy's defenses.",
-          "baseDamage": 0,
+          "description": "Deliver a heavy slash, striking through the enemy defense.",
+          "baseDamage": 10,
           "heal": 0,
           "speedBuff": 0,
           "speedDebuff": 0,
@@ -73,7 +73,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Holy Smite",
           "description": "A radiant strike imbued with holy energy.",
           "baseDamage": 0,
@@ -84,7 +84,7 @@
           "defenseDebuff": 0,
           "strengthBuff": 0,
           "strengthDebuff": 0,
-          "manaCost": 0
+          "manaCost": 1
         },
         "basicDefense": {
           "name": "Shield Block",
@@ -117,7 +117,7 @@
     "Speed": {
       "class": "Duelist",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Flurry",
           "description": "A rapid series of precise strikes.",
           "baseDamage": 0,
@@ -130,7 +130,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Shadow Step",
           "description": "Teleports briefly to strike an enemy from behind.",
           "baseDamage": 0,
@@ -174,7 +174,7 @@
     "Defense": {
       "class": "Paladin",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Smite Evil",
           "description": "A focused strike dealing bonus damage to corrupt foes.",
           "baseDamage": 0,
@@ -187,7 +187,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Divine Judgement",
           "description": "Calls down holy light to strike an enemy.",
           "baseDamage": 0,
@@ -231,7 +231,7 @@
     "MP": {
       "class": "Spellblade",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Arcane Slash",
           "description": "Sword strike infused with elemental energy.",
           "baseDamage": 0,
@@ -244,7 +244,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Elemental Burst",
           "description": "Releases stored magic in a focused strike.",
           "baseDamage": 0,
@@ -290,7 +290,7 @@
     "HP": {
       "class": "Barbarian",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Crush",
           "description": "Powerful hammer strike that breaks through defenses.",
           "baseDamage": 0,
@@ -303,7 +303,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "War Shout",
           "description": "Intimidates and empowers the next strike.",
           "baseDamage": 0,
@@ -347,7 +347,7 @@
     "Strength": {
       "class": "Berserker",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Smash",
           "description": "Heavy hammer blow to an enemy.",
           "baseDamage": 0,
@@ -360,7 +360,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Fury Strike",
           "description": "Infuses strike with intense rage.",
           "baseDamage": 0,
@@ -404,7 +404,7 @@
     "Speed": {
       "class": "Raider",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Swing",
           "description": "Quick hammer strike aimed precisely.",
           "baseDamage": 0,
@@ -417,7 +417,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Shockwave",
           "description": "Hammer imbued with force to stagger a target.",
           "baseDamage": 0,
@@ -461,7 +461,7 @@
     "Defense": {
       "class": "Warden",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Guard Strike",
           "description": "Hammer strike while maintaining defense.",
           "baseDamage": 0,
@@ -474,7 +474,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Stone Fist",
           "description": "Empowers hammer with defensive magic to strike.",
           "baseDamage": 0,
@@ -518,7 +518,7 @@
     "MP": {
       "class": "Runeknight",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Rune Strike",
           "description": "Empowered hammer strike with mystical force.",
           "baseDamage": 0,
@@ -531,7 +531,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Arcane Hammer",
           "description": "Unleashes stored magical energy through hammer.",
           "baseDamage": 0,
@@ -577,7 +577,7 @@
     "HP": {
       "class": "Hunter",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Precise Shot",
           "description": "A carefully aimed arrow pierces an enemy.",
           "baseDamage": 0,
@@ -590,7 +590,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Piercing Arrow",
           "description": "Magic-infused arrow targets a vulnerable point.",
           "baseDamage": 0,
@@ -634,7 +634,7 @@
     "Strength": {
       "class": "Sniper",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Deadeye",
           "description": "A high-powered shot hits a precise target.",
           "baseDamage": 0,
@@ -647,7 +647,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Focused Shot",
           "description": "Magical arrow pierces defenses.",
           "baseDamage": 0,
@@ -691,7 +691,7 @@
     "Speed": {
       "class": "Ranger",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Rapid Shot",
           "description": "Quick arrow aimed at an enemy.",
           "baseDamage": 0,
@@ -704,7 +704,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Elemental Arrow",
           "description": "Imbues an arrow with elemental power.",
           "baseDamage": 0,
@@ -748,7 +748,7 @@
     "Defense": {
       "class": "Sentinel",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Guarded Shot",
           "description": "A careful arrow release to strike an enemy.",
           "baseDamage": 0,
@@ -761,7 +761,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Holy Arrow",
           "description": "Blessed arrow pierces defenses.",
           "baseDamage": 0,
@@ -805,7 +805,7 @@
     "MP": {
       "class": "Arcane Archer",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Magic Shot",
           "description": "Releases an enchanted arrow at a foe.",
           "baseDamage": 0,
@@ -818,7 +818,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Mystic Barrage",
           "description": "Channels magic through an arrow to strike.",
           "baseDamage": 0,
@@ -864,7 +864,7 @@
     "HP": {
       "class": "Guardian",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Shield Bash",
           "description": "Strikes an enemy with a reinforced shield.",
           "baseDamage": 0,
@@ -877,7 +877,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Blessed Strike",
           "description": "Imbues shield with energy to hit a target.",
           "baseDamage": 0,
@@ -921,7 +921,7 @@
     "Strength": {
       "class": "Crusader",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Mighty Bash",
           "description": "Powerful shield strike against an enemy.",
           "baseDamage": 0,
@@ -934,7 +934,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Divine Crush",
           "description": "Channel holy power through the shield.",
           "baseDamage": 0,
@@ -978,7 +978,7 @@
     "Speed": {
       "class": "Templar",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Quick Bash",
           "description": "Swift shield strike with precision.",
           "baseDamage": 0,
@@ -991,7 +991,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Smite Guard",
           "description": "Magical energy enhances a strike.",
           "baseDamage": 0,
@@ -1035,7 +1035,7 @@
     "Defense": {
       "class": "Protector",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Guard Strike",
           "description": "Shield strike delivered while maintaining defense.",
           "baseDamage": 0,
@@ -1048,7 +1048,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Barrier Smash",
           "description": "Empowered strike reinforced by magic.",
           "baseDamage": 0,
@@ -1092,7 +1092,7 @@
     "MP": {
       "class": "Spellshield",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Arcane Bash",
           "description": "Shield strike enhanced with magical force.",
           "baseDamage": 0,
@@ -1105,7 +1105,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Mystic Guard",
           "description": "Magical shield channels energy into attack.",
           "baseDamage": 0,
@@ -1151,7 +1151,7 @@
     "HP": {
       "class": "Battlemage",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Arcane Bolt",
           "description": "Launches a bolt of magic at an enemy.",
           "baseDamage": 0,
@@ -1164,7 +1164,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Elemental Wave",
           "description": "Channels elemental energy into a strike.",
           "baseDamage": 0,
@@ -1208,7 +1208,7 @@
     "Strength": {
       "class": "Warlock",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Dark Bolt",
           "description": "Fires a bolt of dark magic.",
           "baseDamage": 0,
@@ -1221,7 +1221,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Curse",
           "description": "Inflicts magical damage over time.",
           "baseDamage": 0,
@@ -1265,7 +1265,7 @@
     "Speed": {
       "class": "Sorcerer",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Magic Missile",
           "description": "Shoots a fast-moving magical projectile.",
           "baseDamage": 0,
@@ -1278,7 +1278,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Firebolt",
           "description": "Unleashes a concentrated fire spell.",
           "baseDamage": 0,
@@ -1322,7 +1322,7 @@
     "Defense": {
       "class": "Enchanter",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Enchanted Strike",
           "description": "A magically enhanced attack.",
           "baseDamage": 0,
@@ -1335,7 +1335,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Binding Spell",
           "description": "Restrains or damages an enemy with magic.",
           "baseDamage": 0,
@@ -1379,7 +1379,7 @@
     "MP": {
       "class": "Archmage",
       "abilities": {
-        "basicOffense": {
+        "basicAttack": {
           "name": "Arcane Bolt",
           "description": "Launches a concentrated magical attack.",
           "baseDamage": 0,
@@ -1392,7 +1392,7 @@
           "strengthDebuff": 0,
           "manaCost": 0
         },
-        "magicOffense": {
+        "magicAttack": {
           "name": "Meteor",
           "description": "Calls down a destructive magical force.",
           "baseDamage": 0,
