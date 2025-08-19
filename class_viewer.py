@@ -1,12 +1,13 @@
 # character_viewer.py
 from aqt.qt import *
+from . import config
 
 class ClassViewer(QDialog):
     def __init__(self, character_data, parent=None):
         super().__init__(parent)
         self.character_data = character_data
         self.setWindowTitle("Character Data Viewer")
-        self.setGeometry(200, 200, 1000, 800)
+        self.setGeometry(50, 50, config.VIEWER_LENGTH, config.VIEWER_WIDTH)
         self.setupUI()
         
     def setupUI(self):
@@ -15,7 +16,7 @@ class ClassViewer(QDialog):
         # Title
         title = QLabel("Anki Leveling Classes & Abilities")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title.setStyleSheet("font-size: 18px; font-weight: bold; padding: 10px;")
+        title.setStyleSheet(f"font-size: {config.FONT_SIZE_MEDIUM}; font-weight: bold; padding: 10px; color: {config.FONT_COLOR};")
         layout.addWidget(title)
         
         # Main tab widget for weapons
@@ -50,8 +51,14 @@ class ClassViewer(QDialog):
             }
         """)
         
-        # Fixed set of 5 weapons
-        weapons = ["Sword", "Hammer", "Bow", "Shield", "Wand"]
+        # Use config weapons
+        weapons = [
+            config.WEAPONS_NAME_0,
+            config.WEAPONS_NAME_1,
+            config.WEAPONS_NAME_2,
+            config.WEAPONS_NAME_3,
+            config.WEAPONS_NAME_4
+        ]
         
         for weapon in weapons:
             weapon_tab = self.create_weapon_tab(weapon)
@@ -70,7 +77,7 @@ class ClassViewer(QDialog):
         if weapon not in self.character_data:
             no_data_label = QLabel(f"No data available for {weapon}")
             no_data_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            no_data_label.setStyleSheet("font-size: 16px; color: #666; padding: 50px;")
+            no_data_label.setStyleSheet(f"font-size: {config.FONT_SIZE_MEDIUM}; color: #666; padding: 50px;")
             weapon_layout.addWidget(no_data_label)
             weapon_widget.setLayout(weapon_layout)
             return weapon_widget
@@ -106,8 +113,14 @@ class ClassViewer(QDialog):
             }
         """)
         
-        # Fixed set of 5 stats
-        stats = ["HP", "Strength", "Speed", "Defense", "MP"]
+        # Use config stats
+        stats = [
+            config.STATS_NAME_HP,
+            config.STATS_NAME_STR,
+            config.STATS_NAME_SPD,
+            config.STATS_NAME_DEF,
+            config.STATS_NAME_MP
+        ]
         weapon_data = self.character_data[weapon]
         
         for stat in stats:
@@ -120,7 +133,7 @@ class ClassViewer(QDialog):
                 empty_layout = QVBoxLayout()
                 empty_label = QLabel(f"No {stat} class available for {weapon}")
                 empty_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-                empty_label.setStyleSheet("font-size: 14px; color: #999; padding: 30px;")
+                empty_label.setStyleSheet(f"font-size: {config.FONT_SIZE_SMALL}; color: #999; padding: 30px;")
                 empty_layout.addWidget(empty_label)
                 empty_tab.setLayout(empty_layout)
                 stat_tab_widget.addTab(empty_tab, stat)
@@ -137,8 +150,8 @@ class ClassViewer(QDialog):
         # Class header
         class_header = QLabel(f"{weapon} - {stat} - {class_data['class']}")
         class_header.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        class_header.setStyleSheet("""
-            font-size: 16px; 
+        class_header.setStyleSheet(f"""
+            font-size: {config.FONT_SIZE_MEDIUM}; 
             font-weight: bold; 
             color: #2E86AB; 
             padding: 15px; 
@@ -188,7 +201,7 @@ class ClassViewer(QDialog):
         
         # Ability name
         ability_name = QLabel(ability['name'])
-        ability_name.setStyleSheet("font-weight: bold; font-size: 14px; color: #2E86AB;")
+        ability_name.setStyleSheet(f"font-weight: bold; font-size: {config.FONT_SIZE_SMALL}; color: #2E86AB;")
         header_layout.addWidget(ability_name)
         
         # Ability type badge
@@ -220,7 +233,7 @@ class ClassViewer(QDialog):
         desc_label.setWordWrap(True)
         ability_layout.addWidget(desc_label)
         
-        # Stats in a more organized grid
+        # Stats in a more organized grid using config values
         stats_frame = QFrame()
         stats_frame.setStyleSheet("QFrame { border: 1px solid #e9ecef; border-radius: 5px; background-color: #f8f9fa; }")
         stats_layout = QGridLayout()
@@ -228,15 +241,15 @@ class ClassViewer(QDialog):
         stats_layout.setContentsMargins(10, 10, 10, 10)
         
         stats = [
-            ('Damage', ability['baseDamage'], '#dc3545'),
-            ('Heal', ability['heal'], '#28a745'),
-            ('Speed+', ability['speedBuff'], '#ffc107'),
-            ('Speed-', ability['speedDebuff'], '#6f42c1'),
-            ('Defense+', ability['defenseBuff'], '#fd7e14'),
-            ('Defense-', ability['defenseDebuff'], '#e83e8c'),
-            ('Strength+', ability['strengthBuff'], '#20c997'),
-            ('Strength-', ability['strengthDebuff'], '#6c757d'),
-            ('Mana Cost', ability['manaCost'], '#17a2b8')
+            (config.ABILITY_NAME_DMG, ability['baseDamage'], config.ABILITY_BACKGROUND_COLOR_DMG),
+            (config.ABILITY_NAME_HEAL, ability['heal'], config.ABILITY_BACKGROUND_COLOR_HEAL),
+            (config.ABILITY_NAME_SPD_UP, ability['speedBuff'], config.ABILITY_BACKGROUND_COLOR_SPD_UP),
+            (config.ABILITY_NAME_SPD_DOWN, ability['speedDebuff'], config.ABILITY_BACKGROUND_COLOR_SPD_DOWN),
+            (config.ABILITY_NAME_DEF_UP, ability['defenseBuff'], config.ABILITY_BACKGROUND_COLOR_DEF_UP),
+            (config.ABILITY_NAME_DEF_DOWN, ability['defenseDebuff'], config.ABILITY_BACKGROUND_COLOR_DEF_DOWN),
+            (config.ABILITY_NAME_STR_UP, ability['strengthBuff'], config.ABILITY_BACKGROUND_COLOR_STR_UP),
+            (config.ABILITY_NAME_STR_DOWN, ability['strengthDebuff'], config.ABILITY_BACKGROUND_COLOR_STR_DOWN),
+            (config.ABILITY_NAME_MANA_COST, ability['manaCost'], config.ABILITY_BACKGROUND_COLOR_MANA_COST)
         ]
         
         displayed_stats = [(name, value, color) for name, value, color in stats if value != 0]

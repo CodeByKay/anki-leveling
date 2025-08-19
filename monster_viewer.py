@@ -1,5 +1,6 @@
 # monster_viewer.py
 from aqt.qt import *
+from . import config
 
 class MonsterViewer(QDialog):
     def __init__(self, monster_data, parent=None):
@@ -15,24 +16,32 @@ class MonsterViewer(QDialog):
         # Title
         title = QLabel("Monster Bestiary - Evolution Lines")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title.setStyleSheet("font-size: 20px; font-weight: bold; padding: 15px; color: #8B0000;")
+        title.setStyleSheet(f"font-size: {config.FONT_SIZE_BIG}; font-weight: bold; padding: 15px; color: {config.FONT_COLOR};")
         layout.addWidget(title)
         
         # Main tab widget for stat focus categories
         self.main_tab_widget = QTabWidget()
-        self.main_tab_widget.setStyleSheet("""
-            QTabWidget::pane {
-                border: 2px solid #8B4513;
+        
+        # Get monster tier border colors from config
+        tier_colors = [
+            config.MONSTER_TIER_BORDER_COLOR_1, 
+            config.MONSTER_TIER_BORDER_COLOR_2,
+            config.MONSTER_TIER_BORDER_COLOR_3
+        ]
+        
+        self.main_tab_widget.setStyleSheet(f"""
+            QTabWidget::pane {{
+                border: 2px solid black;
                 border-radius: 8px;
                 background-color: #FFF8DC;
-            }
-            QTabWidget::tab-bar {
+            }}
+            QTabWidget::tab-bar {{
                 alignment: center;
-            }
-            QTabBar::tab {
+            }}
+            QTabBar::tab {{
                 background-color: #DEB887;
-                border: 2px solid #8B4513;
-                border-bottom-color: #8B4513;
+                border: 2px solid black;
+                border-bottom-color: black;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
                 min-width: 120px;
@@ -40,24 +49,24 @@ class MonsterViewer(QDialog):
                 margin-right: 3px;
                 font-weight: bold;
                 color: #654321;
-            }
-            QTabBar::tab:selected {
-                background-color: #B22222;
+            }}
+            QTabBar::tab:selected {{
+                background-color: white;
                 color: white;
-                border-bottom-color: #B22222;
-            }
-            QTabBar::tab:hover:!selected {
+                border-bottom-color: white;
+            }}
+            QTabBar::tab:hover:!selected {{
                 background-color: #CD853F;
-            }
+            }}
         """)
         
-        # Stat focus categories
+        # Stat focus categories using config stat names and colors
         categories = [
-            ("HP", "HP-Focused (Tanks)", "#DC143C"),
-            ("Strength", "Strength-Focused (Attackers)", "#FF4500"),
-            ("Speed", "Speed-Focused (Agile)", "#32CD32"),
-            ("Defense", "Defense-Focused (Guardians)", "#4682B4"),
-            ("MP", "MP-Focused (Magical)", "#9932CC")
+            (config.STATS_NAME_HP, f"{config.STATS_NAME_HP}-Focused (Tanks)", config.STATS_TEXT_COLOR_HP),
+            (config.STATS_NAME_STR, f"{config.STATS_NAME_STR}-Focused (Attackers)", config.STATS_TEXT_COLOR_STR),
+            (config.STATS_NAME_SPD, f"{config.STATS_NAME_SPD}-Focused (Agile)", config.STATS_TEXT_COLOR_SPD),
+            (config.STATS_NAME_DEF, f"{config.STATS_NAME_DEF}-Focused (Guardians)", config.STATS_TEXT_COLOR_DEF),
+            (config.STATS_NAME_MP, f"{config.STATS_NAME_MP}-Focused (Magical)", config.STATS_TEXT_COLOR_MP)
         ]
         
         for category_key, category_name, category_color in categories:
@@ -77,9 +86,9 @@ class MonsterViewer(QDialog):
         category_header = QLabel(category_name)
         category_header.setAlignment(Qt.AlignmentFlag.AlignCenter)
         category_header.setStyleSheet(f"""
-            font-size: 16px; 
+            font-size: {config.FONT_SIZE_MEDIUM}; 
             font-weight: bold; 
-            color: white; 
+            color: {category_color}; 
             padding: 12px; 
             background-color: {category_color}; 
             border-radius: 8px; 
@@ -91,7 +100,7 @@ class MonsterViewer(QDialog):
         if category_key not in self.monster_data:
             no_data_label = QLabel(f"No monsters available for {category_name}")
             no_data_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            no_data_label.setStyleSheet("font-size: 16px; color: #666; padding: 50px;")
+            no_data_label.setStyleSheet(f"font-size: {config.FONT_SIZE_MEDIUM}; color: #666; padding: 50px;")
             category_layout.addWidget(no_data_label)
             category_widget.setLayout(category_layout)
             return category_widget
@@ -132,7 +141,6 @@ class MonsterViewer(QDialog):
         
         for i, monster in enumerate(monsters):
             monster_tab = self.create_monster_tab(monster, category_color)
-            # Use tier1 name for tab title
             tab_name = monster['name']['base']
             monster_tab_widget.addTab(monster_tab, f"{i+1}. {tab_name}")
         
@@ -156,9 +164,13 @@ class MonsterViewer(QDialog):
         """)
         evolution_layout = QHBoxLayout()
         
-        # Display all three tiers
+        # Display all three tiers using config monster tier colors
         tiers = ['tier1', 'tier2', 'tier3']
-        tier_colors = ['#CD853F', '#B8860B', '#DAA520']
+        tier_colors = [
+            config.MONSTER_TIER_BACKGROUND_COLOR_0,
+            config.MONSTER_TIER_BACKGROUND_COLOR_1, 
+            config.MONSTER_TIER_BACKGROUND_COLOR_2
+        ]
         
         for tier, tier_color in zip(tiers, tier_colors):
             tier_frame = QFrame()
@@ -174,7 +186,7 @@ class MonsterViewer(QDialog):
             
             name_label = QLabel(monster['name'][tier])
             name_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            name_label.setStyleSheet("font-size: 12px; font-weight: bold; color: white;")
+            name_label.setStyleSheet(f"font-size: {config.FONT_SIZE_SMALL}; font-weight: bold; color: white;")
             name_label.setWordWrap(True)
             
             tier_layout.addWidget(name_label)
@@ -184,31 +196,33 @@ class MonsterViewer(QDialog):
         evolution_header.setLayout(evolution_layout)
         monster_layout.addWidget(evolution_header)
         
-        # Stats display
+        # Stats display using config stat colors
         stats_frame = QFrame()
-        stats_frame.setStyleSheet("""
-            QFrame { 
-                border: 2px solid #8B4513; 
+        stats_frame.setStyleSheet(f"""
+            QFrame {{ 
+                border: 2px solid white; 
                 border-radius: 8px; 
                 background-color: #FFF8DC; 
                 margin: 5px; 
-            }
+            }}
         """)
         stats_layout = QVBoxLayout()
         
         stats_title = QLabel("Base Stats")
         stats_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        stats_title.setStyleSheet("font-size: 14px; font-weight: bold; color: #8B0000; padding: 5px;")
+        stats_title.setStyleSheet(f"font-size: {config.FONT_SIZE_SMALL}; font-weight: bold; color: {config.FONT_COLOR}; padding: 5px;")
         stats_layout.addWidget(stats_title)
         
         stats_grid_layout = QHBoxLayout()
         stats_data = monster['stats']
+        
+        # Use config stat colors
         stat_colors = {
-            'HP': '#DC143C',
-            'Strength': '#FF4500', 
-            'Speed': '#32CD32',
-            'Defense': '#4682B4',
-            'MP': '#9932CC'
+            config.STATS_NAME_HP: config.STATS_TEXT_COLOR_HP,
+            config.STATS_NAME_STR: config.STATS_TEXT_COLOR_STR, 
+            config.STATS_NAME_SPD: config.STATS_TEXT_COLOR_SPD,
+            config.STATS_NAME_DEF: config.STATS_TEXT_COLOR_DEF,
+            config.STATS_NAME_MP: config.STATS_TEXT_COLOR_MP
         }
         
         for stat_name, stat_value in stats_data.items():
@@ -229,7 +243,7 @@ class MonsterViewer(QDialog):
             stat_name_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
             
             stat_value_label = QLabel(str(stat_value))
-            stat_value_label.setStyleSheet("font-size: 14px; font-weight: bold; color: #333;")
+            stat_value_label.setStyleSheet(f"font-size: {config.FONT_SIZE_SMALL}; font-weight: bold; color: #333;")
             stat_value_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
             
             stat_container_layout.addWidget(stat_name_label)
@@ -249,7 +263,7 @@ class MonsterViewer(QDialog):
         
         abilities_title = QLabel("Abilities")
         abilities_title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        abilities_title.setStyleSheet("font-size: 16px; font-weight: bold; color: #8B0000; padding: 10px;")
+        abilities_title.setStyleSheet(f"font-size: {config.FONT_SIZE_MEDIUM}; font-weight: bold; color: {config.FONT_COLOR}; padding: 10px;")
         abilities_layout.addWidget(abilities_title)
         
         for ability in monster['abilities']:
@@ -285,7 +299,7 @@ class MonsterViewer(QDialog):
         
         # Ability name
         ability_name = QLabel(ability['name'])
-        ability_name.setStyleSheet(f"font-weight: bold; font-size: 16px; color: {category_color};")
+        ability_name.setStyleSheet(f"font-weight: bold; font-size: {config.FONT_SIZE_MEDIUM}; color: {category_color};")
         header_layout.addWidget(ability_name)
         header_layout.addStretch()
         
@@ -304,7 +318,7 @@ class MonsterViewer(QDialog):
         desc_label.setWordWrap(True)
         ability_layout.addWidget(desc_label)
         
-        # Stats in a grid
+        # Stats in a grid using config ability colors
         stats_frame = QFrame()
         stats_frame.setStyleSheet("QFrame { border: 1px solid #DDD; border-radius: 6px; background-color: #FAFAFA; }")
         stats_layout = QGridLayout()
@@ -312,15 +326,15 @@ class MonsterViewer(QDialog):
         stats_layout.setContentsMargins(8, 8, 8, 8)
         
         stats = [
-            ('Damage', ability['baseDamage'], '#dc3545'),
-            ('Heal', ability['heal'], '#28a745'),
-            ('Speed+', ability['speedBuff'], '#ffc107'),
-            ('Speed-', ability['speedDebuff'], '#6f42c1'),
-            ('Defense+', ability['defenseBuff'], '#fd7e14'),
-            ('Defense-', ability['defenseDebuff'], '#e83e8c'),
-            ('Strength+', ability['strengthBuff'], '#20c997'),
-            ('Strength-', ability['strengthDebuff'], '#6c757d'),
-            ('Mana Cost', ability['manaCost'], '#17a2b8')
+            (config.ABILITY_NAME_DMG, ability['baseDamage'], config.ABILITY_BACKGROUND_COLOR_DMG),
+            (config.ABILITY_NAME_HEAL, ability['heal'], config.ABILITY_BACKGROUND_COLOR_HEAL),
+            (config.ABILITY_NAME_SPD_UP, ability['speedBuff'], config.ABILITY_BACKGROUND_COLOR_SPD_UP),
+            (config.ABILITY_NAME_SPD_DOWN, ability['speedDebuff'], config.ABILITY_BACKGROUND_COLOR_SPD_DOWN),
+            (config.ABILITY_NAME_DEF_UP, ability['defenseBuff'], config.ABILITY_BACKGROUND_COLOR_DEF_UP),
+            (config.ABILITY_NAME_DEF_DOWN, ability['defenseDebuff'], config.ABILITY_BACKGROUND_COLOR_DEF_DOWN),
+            (config.ABILITY_NAME_STR_UP, ability['strengthBuff'], config.ABILITY_BACKGROUND_COLOR_STR_UP),
+            (config.ABILITY_NAME_STR_DOWN, ability['strengthDebuff'], config.ABILITY_BACKGROUND_COLOR_STR_DOWN),
+            (config.ABILITY_NAME_MANA_COST, ability['manaCost'], config.ABILITY_BACKGROUND_COLOR_MANA_COST)
         ]
         
         displayed_stats = [(name, value, color) for name, value, color in stats if value != 0]
