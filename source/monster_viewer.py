@@ -1,6 +1,6 @@
 # monster_viewer.py
 from aqt.qt import *
-from . import config
+from ..data import config
 
 class MonsterViewer(QDialog):
     def __init__(self, monster_data, parent=None):

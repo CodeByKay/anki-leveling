@@ -1,6 +1,6 @@
 # character_viewer.py
 from aqt.qt import *
-from . import config
+from ..data import config
 
 class ClassViewer(QDialog):
     def __init__(self, character_data, parent=None):

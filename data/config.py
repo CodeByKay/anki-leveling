@@ -1,5 +1,9 @@
 # ALL CONFIGURATIONS FOR THE APP
 
+# DATA
+CLASSES_PATH = "./data/classes.json"
+MONSTERS_PATH = "./data/monsters.json"
+
 # WINDOW
 MAIN_LENGTH = 1000
 MAIN_WIDTH = 600
