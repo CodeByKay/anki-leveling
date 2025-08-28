@@ -3,6 +3,7 @@
 # DATA
 CLASSES_PATH = "./data/classes.json"
 MONSTERS_PATH = "./data/monsters.json"
+CHARACTERS_PATH = "./data/characters.json"
 
 # WINDOW
 MAIN_LENGTH = 1000
